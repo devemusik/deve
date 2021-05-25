@@ -27,18 +27,18 @@ async def addchannel(client, message):
         await USER.send_message(message.chat.id,"I joined here as you requested")
     except UserAlreadyParticipant:
         await message.reply_text(
-            "<b>@babugrup geus asup anying</b>",
+            "<b>@babugrup2 geus asup anying</b>",
         )
         pass
     except Exception as e:
         print(e)
         await message.reply_text(
             f"<b>🛑 Flood Wait Error 🛑 \n User {user.first_name} couldn't join your group due to heavy join requests for userbot! Make sure user is not banned in group."
-            "\n\nOr manually add @babugrup to your Group and try again</b>",
+            "\n\nOr manually add @babugrup2 to your Group and try again</b>",
         )
         return
     await message.reply_text(
-            "<b>@babugrup bot stress join ka chat</b>",
+            "<b>@babugrup2 bot stress join ka chat</b>",
         )
     
 @USER.on_message(filters.group & filters.command(["userbotleave"]))
@@ -47,7 +47,7 @@ async def rem(USER, message):
         await USER.leave_chat(message.chat.id)
     except:  
         await message.reply_text(
-            f"<b>User couldn't leave your group! May be floodwaits."
-            "\n\nOr manually kick me from to your Group</b>",
+            f"<b>User teu bisa kaluar grup kusabab linglung."
+            "\n\nAtau usir aing secara teu sopan alias manual</b>",
         )
         return

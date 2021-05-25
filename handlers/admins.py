@@ -51,7 +51,7 @@ async def resume(_, message: Message):
     ) or (
             callsmusic.pytgcalls.active_calls[message.chat.id] == 'playing'
     ):
-        await message.reply_text("❗ Eweuh nu di erenkeun!")
+        await message.reply_text("❗ Ai sia dek ngaresume naon!?")
     else:
         callsmusic.pytgcalls.resume_stream(message.chat.id)
         await message.reply_text("⏸ Resumed!")
