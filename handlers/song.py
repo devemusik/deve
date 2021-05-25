@@ -32,7 +32,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('🔎 Finding the song...')
+    m = message.reply('🔎 Keu neang lagu...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -51,7 +51,7 @@ def song(client, message):
 
     except Exception as e:
         m.edit(
-            "❌ Found Nothing.\n\nTry another keywork or maybe spell it properly."
+            "❌ Teu kapanggih anying.\n\nCik ngetik teh ecreug lah gblg!"
         )
         print(str(e))
         return
@@ -78,8 +78,6 @@ def song(client, message):
     except Exception as e:
         print(e)
 
-ARQ_API = "http://35.240.133.234:8000"
-arq = ARQ(ARQ_API)
 
 
 def get_text(message: Message) -> [None, str]:
@@ -366,7 +364,7 @@ async def ytmusic(client,message: Message):
 
             if duration > 8:
                 await pablo.edit(
-                    f"❌ Videos longer than 8 minute(s) aren't allowed, the provided video is {duration} minute(s)"
+                    f"❌ Batas waktu ngan bisa nepi ka 30minute(s), sia request {duration} minute(s).. Ngotak lah ajg!"
                 )
                 is_downloading = False
                 return

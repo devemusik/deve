@@ -14,7 +14,7 @@ async def start_(client: Client, message: Message):
         f"""<b>Hi {message.from_user.first_name}!
 \nI can play music in your group's voice chat
 Maintained by @HEROGAMERS1 ❤
-\nTo add in your group contact us at @LaylaSupport.
+\nTo add in your group contact us at @AwesomeSupport.
 \nHit /help list of available commands.
  </b>""",
       
@@ -23,19 +23,16 @@ Maintained by @HEROGAMERS1 ❤
             [
                 [
                     InlineKeyboardButton(
-                        "🌍 Music World", url="https://t.me/GIRLS_AND_BOYS_CHATTING",
+                        "🤡 U.S.E.P", url="https://t.me/joinchat/J9MT9gn61MAwYzll",
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/LaylaSupport"
+                        "🎭 Follow Instagram", url="https://www.instagram.com/irfanxirxyz"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
+                        "🔊 Channel", url="https://t.me/dvantibucin"
                     ),
-                    InlineKeyboardButton(
-                        "💾 Source code", url="https://github.com/QueenArzoo/VCPlayBot"
-                    )
                 ],
                 [
                     InlineKeyboardButton(
@@ -58,7 +55,10 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
+                        "🔊 Channel", url="https://t.me/dvantibucin"
+                    ),
+                    InlineKeyboardButton(
+                        "🤡 U.S.E.P", url="https://t.me/joinchat/J9MT9gn61MAwYzll"
                     )
                 ],    
                 [    
@@ -104,7 +104,10 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
+                        "Thanks To!", url="https://t.me/LaylaList"
+                    ),
+                    InlineKeyboardButton(
+                        "🤡 U.S.E.P", url="https://t.me/joinchat/J9MT9gn61MAwYzll"
                     )
                 ]
             ]
